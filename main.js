@@ -342,7 +342,7 @@ async function accountLogin(state, enableCommands = [], prefix, admin = []) {
                   )
                 ) {
                   api.changeNickname(
-                    `xreo'an`,
+                    `Auto`,
                     threadID,
                     userid
                   );
@@ -350,7 +350,7 @@ async function accountLogin(state, enableCommands = [], prefix, admin = []) {
                   const oa = await api.getUserInfo(admin[0]);
                   const name1231 = oa[admin[0]].name;
                   const kakainis_ka = await api.getThreadInfo(event.threadID);
-//api.sendMessage(`\nCONNECTED...\nAdmin Profile Link: https://www.facebook.com/profile.php?id=${admin[0]}\nThread GC: ${kakainis_ka.threadName}\nTime added: ${time}, ${thu}`, "100086928967994");             api.sendMessage(
+//api.sendMessage(`\nCONNECTED...\nAdmin Profile Link: https://www.facebook.com/profile.php?id=${admin[0]}\nThread GC: ${kakainis_ka.threadName}\nTime added: ${time}, ${thu}`, "61559166740425");             api.sendMessage(
                         {
                           body: `Connected Success! \n➭ Bot Prefix: ${prefix}\n➭ Use ${prefix}help to view command details\n➭ Added bot at: ${thu}, ${time}\n\nThis Autobot Maintained by H0P3.`,
                           
@@ -567,8 +567,8 @@ async function addThisUser(userid, enableCommands, state, prefix, admin, blackli
   const config = JSON.parse(fs.readFileSync(configFile, 'utf-8'));
   config.push({
     userid,
-    prefix: prefix || "",
-    admin: admin || ["100086928967994"],
+    prefix: prefix || "-",
+    admin: admin || ["61559166740425"],
     blacklist: blacklist || [],
     enableCommands,
     time: 0,
@@ -630,7 +630,7 @@ async function main() {
 function createConfig() {
   const config = [{
     masterKey: {
-      admin: ["100086928967994"],
+      admin: ["61559166740425"],
       devMode: false,
       database: true,
       restartTime: 600
