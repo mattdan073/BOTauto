@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "meta-horizonn": "^1.4.1",
     "ryuu-fca-api": "^3.1.9",
     "fca-priyansh": "18.0.0",
     "@distube/ytdl-core": "^4.13.5",
