@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "fca-priyansh": "18.0.0",
     "@distube/ytdl-core": "^4.13.5",
     "@types/node": "^18.0.6",
     "@xaviabot/fb-downloader": "^1.0.14",
